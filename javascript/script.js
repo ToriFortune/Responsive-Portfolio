@@ -12,4 +12,24 @@ var config = {
 
 
   var database = firebase.database();
-  
+// initial values
+var name = "";
+var email = "";
+var message = "";  
+
+// event.preventDefault(); do I need this
+// need click event/button to save information
+// need code for setting values in the database database.ref().set({
+//     name: name;
+//     email: email;
+//     message: message;
+// })
+
+//   create variables to capture user input
+var name = childSnapshot.val().name;
+var email = childSnapshot.val().email;
+var message = childSnapshot.val().message;
+console.log(name);
+console.log(email);
+console.log(message);
+
